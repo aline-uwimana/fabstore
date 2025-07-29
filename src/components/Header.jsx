@@ -82,7 +82,7 @@ const Header = () => {
                   <li>
                     <button className="dropdown-item" onClick={handleLogout} style={{ cursor: 'pointer' }}>
                       <i className="bi bi-door-closed-fill text-danger"></i>
-                      Logout
+                      Sign in
                     </button>
                   </li>
                 </ul>
