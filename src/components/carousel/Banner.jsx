@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 const Item = ({ item, index }) => (
   <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
     <Link to={item.to}>
-      <img src={item.img} className="img-fluid" alt={item.title} />
-      {(item.title || item.description) && (
-        <div className="carousel-caption d-none d-md-block">
-          {item.title && <h5>{item.title}</h5>}
-          {item.description && <p>{item.description}</p>}
-        </div>
-      )}
+      <img src={item.img} className="banner-img img-fluid" alt={item.title} />
     </Link>
   </div>
 );
@@ -41,24 +35,6 @@ const Banner = (props) => {
           <Item item={item} index={index} key={index} />
         ))}
       </div>
-      <a
-        className="carousel-control-prev"
-        href={`#${props.id}`}
-        role="button"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true" />
-        <span className="sr-only">Previous</span>
-      </a>
-      <a
-        className="carousel-control-next"
-        href={`#${props.id}`}
-        role="button"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true" />
-        <span className="sr-only">Next</span>
-      </a>
     </div>
   );
 };

@@ -1,0 +1,42 @@
+.aboutus-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 3rem 0 2rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(20,33,61,0.08);
+}
+.aboutus-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #14213d;
+}
+.aboutus-title {
+  color: #14213d !important;
+}
+.aboutus-section {
+  margin-bottom: 3rem;
+}
+.aboutus-section img {
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(20,33,61,0.10);
+  transition: transform 0.2s;
+}
+.aboutus-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 32px rgba(20,33,61,0.13);
+}
+@media (max-width: 991.98px) {
+  .aboutus-hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .aboutus-hero {
+    padding: 2rem 0 1rem 0;
+  }
+  .aboutus-hero h1 {
+    font-size: 1.5rem;
+  }
+  .aboutus-section img {
+    border-radius: 0.5rem;
+  }
+} 

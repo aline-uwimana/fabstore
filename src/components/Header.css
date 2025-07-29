@@ -1,0 +1,135 @@
+.fabstore-header-logo {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #14213d;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.5rem 0.1rem 0.5rem;
+  border-radius: 4px;
+  background: none;
+  position: relative;
+  transition: color 0.2s;
+  display: inline-block;
+}
+.fabstore-header-logo::after {
+  content: '';
+  display: block;
+  width: 60%;
+  margin: 0.1rem auto 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, #fca311 0%, #14213d 100%);
+  border-radius: 2px;
+}
+.fabstore-header-logo:hover, .fabstore-header-logo:focus {
+  color: #fca311;
+  text-decoration: none;
+}
+
+.header-search-btn {
+  background: #14213d !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(20,33,61,0.07);
+  padding: 0.375rem 0.75rem;
+  /* Bootstrap default btn padding */
+}
+.header-search-btn:hover, .header-search-btn:focus {
+  background: #0d1a2f !important;
+  color: #fca311 !important;
+  outline: none;
+}
+.header-search-btn i {
+  font-size: 1.15rem;
+  vertical-align: middle;
+}
+
+.header-cart-btn {
+  background: #14213d !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(20,33,61,0.07);
+  padding: 0.375rem 0.75rem;
+  /* Bootstrap default btn padding */
+  position: relative;
+}
+.header-cart-btn:hover, .header-cart-btn:focus {
+  background: #0d1a2f !important;
+  color: #fca311 !important;
+  outline: none;
+}
+.header-cart-btn i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.header-cart-btn .badge {
+  background: #fca311 !important;
+  color: #14213d !important;
+  font-weight: 700;
+  font-size: 0.8rem;
+  top: 0.2rem !important;
+  right: 0.2rem !important;
+}
+
+.header-profile-btn {
+  background: #14213d !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(20,33,61,0.07);
+  padding: 0.375rem 0.75rem;
+  /* Bootstrap default btn padding */
+}
+.header-profile-btn:hover, .header-profile-btn:focus {
+  background: #0d1a2f !important;
+  color: #fca311 !important;
+  outline: none;
+}
+.header-profile-btn i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+/* Align all header action buttons horizontally and responsively */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .fabstore-header-logo {
+    font-size: 1rem;
+    padding: 0.15rem 0.3rem 0.1rem 0.3rem;
+  }
+  .header-search-btn, .header-cart-btn, .header-profile-btn {
+    font-size: 1rem;
+    padding: 0.35rem 0.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .fabstore-header-logo {
+    font-size: 0.95rem;
+    padding: 0.1rem 0.2rem 0.08rem 0.2rem;
+  }
+  .header-search-btn, .header-cart-btn, .header-profile-btn {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.4rem;
+  }
+  .header-actions {
+    gap: 0.25rem;
+  }
+} 

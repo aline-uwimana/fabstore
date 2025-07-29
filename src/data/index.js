@@ -2,21 +2,15 @@ export const data = {
   banner: [
     {
       to: "/link",
-      img: "../../images/banner/Banner_2.webp",
+      img: "../../images/banner/image.png",
       title: "First slide label",
       description: "Nulla vitae elit libero, a pharetra augue mollis interdum",
     },
     {
       to: "/link",
-      img: "../../images/banner/Banner_3.webp",
+      img: "../../images/banner/image3.webp",
       title: "Second slide label",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      to: "/link",
-      img: "../../images/banner/Banner_1.webp",
-      title: "Third slide label",
-      description: " Praesent commodo cursus magna, vel scelerisque nisl.",
     },
   ],
   iconProducts: [
@@ -107,9 +101,9 @@ export const data = {
       id: 2,
       sku: "FAS-02",
       link: "/product/detail",
-      name: "Great product name goes here",
+      name: "Lacoste Men's Polo Shirt",
       img: "../../images/products/tshirt_grey_480x400.webp",
-      price: 475,
+      price: 500,
       originPrice: 0,
       discountPrice: 0,
       discountPercentage: 0,

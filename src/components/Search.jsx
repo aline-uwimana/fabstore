@@ -12,7 +12,7 @@ const Search = () => {
         />
         <label className="visually-hidden" htmlFor="search"></label>
         <button
-          className="btn btn-primary text-white"
+          className="header-search-btn"
           type="submit"
           aria-label="Search"
         >

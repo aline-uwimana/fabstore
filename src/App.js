@@ -7,6 +7,8 @@ import TopMenu from "./components/TopMenu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.min.css";
+import AboutUs from "./views/pages/AboutUs";
+// import DealsOffers from "./views/pages/DealsOffers";
 //const Header = lazy(() => import("./components/Header"));
 //const TopMenu = lazy(() => import("./components/TopMenu"));
 const HomeView = lazy(() => import("./views/Home"));
@@ -17,7 +19,7 @@ const OrdersView = lazy(() => import("./views/account/Orders"));
 const WishlistView = lazy(() => import("./views/account/Wishlist"));
 const NotificationView = lazy(() => import("./views/account/Notification"));
 const MyProfileView = lazy(() => import("./views/account/MyProfile"));
-const ProductListView = lazy(() => import("./views/product/List"));
+// const ProductListView = lazy(() => import("./views/product/List"));
 const ProductDetailView = lazy(() => import("./views/product/Detail"));
 const StarZoneView = lazy(() => import("./views/product/StarZone"));
 const CartView = lazy(() => import("./views/cart/Cart"));
@@ -44,6 +46,7 @@ function App() {
         >
           <Routes>
             <Route exact path="/" element={<HomeView/>} />
+            <Route exact path="/about-us" element={<AboutUs />} />
             <Route exact path="/account/signin" element={<SignInView/>} />
             <Route exact path="/account/signup" element={<SignUpView/>} />
             <Route
@@ -59,7 +62,7 @@ function App() {
               path="/account/notification"
               element={<NotificationView/>}
             />
-            <Route exact path="/category" element={<ProductListView/>} />
+            {/* <Route exact path="/category" element={<ProductListView/>} /> */}
             <Route exact path="/product/detail" element={<ProductDetailView/>} />
             <Route exact path="/star/zone" element={<StarZoneView/>} />
             <Route exact path="/cart" element={<CartView/>} />
@@ -70,6 +73,7 @@ function App() {
             <Route exact path="/support" element={<SupportView/>} />
             <Route exact path="/blog" element={<BlogView/>} />
             <Route exact path="/blog/detail" element={<BlogDetailView/>} />
+            {/* <Route exact path="/deals" element={<DealsOffers />} /> */}
             <Route exact path="/500" element={<InternalServerErrorView/>} />
             <Route path="*" element={<NotFoundView/>} />
           </Routes>

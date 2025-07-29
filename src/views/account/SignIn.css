@@ -1,0 +1,66 @@
+.signin-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.signin-image-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.signin-image-container {
+  height: 100%;
+  background-image: url('../../../public/images/banner/Laptops.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.signin-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 126, 234, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.signin-image-content {
+  text-align: center;
+  max-width: 500px;
+}
+
+.signin-features {
+  margin-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.signin-form-section {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .signin-form-section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .signin-form-section {
+    padding: 0.5rem;
+  }
+} 
